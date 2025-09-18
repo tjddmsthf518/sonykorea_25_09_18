@@ -1,0 +1,7 @@
+section:not(.section_1) {
+  padding: 150px 100px 300px;
+}
+
+a {
+  color: white;
+}

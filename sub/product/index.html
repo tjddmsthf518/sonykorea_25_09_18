@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/Favicon_144x144.ico" type="image/jpeg" />
+    <title>Product</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        var swiper = new Swiper(".mo_section_2", {
+          slidesPerView: "auto",
+          spaceBetween: 10,
+        });
+
+        $(".menu_bar").click(function () {
+          $(".sub_menu_wrap").addClass("active");
+        });
+
+        $(".close").click(function () {
+          $(".sub_menu_wrap").removeClass("active");
+        });
+
+        var clicked = "on";
+
+        $(".store_click").click(function () {
+          if (clicked == "on") {
+            $(".store_wrap").css({
+              display: "block",
+            });
+
+            $(".store_click img").css({
+              transform: "rotate(-180deg)",
+            });
+
+            clicked = "off";
+          } else if (clicked == "off") {
+            $(".store_wrap").css({
+              display: "none",
+            });
+
+            $(".store_click img").css({
+              transform: "rotate(0deg)",
+            });
+
+            clicked = "on";
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="logo">
+          <a href="../../index.html">
+            <img src="img/sony-logo.svg" alt="logo" />
+          </a>
+        </div>
+
+        <ul class="menu_wrap">
+          <li>
+            <a href="../product/index.html">Product</a>
+          </li>
+
+          <li class="store_link">
+            Store
+            <ul class="sub_menu">
+              <li>
+                <a
+                  href="https://store.sony.co.kr/?cmpid=gwt:header:store"
+                  target="_blank"
+                  >온라인스토어↗</a
+                >
+              </li>
+              <li>
+                <a href="https://www.playstation.com/ko-kr/" target="_blank"
+                  >PlayStation®↗</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="../aboutus/index.html">About Us</a>
+          </li>
+
+          <li>
+            <a href="../sonylife/index.html">Sony Life</a>
+          </li>
+
+          <li>
+            <a href="../service/index.html">Service</a>
+          </li>
+        </ul>
+
+        <div class="menu_bar">
+          <img src="img/sub_tab_mo_img/menu_bar.png" alt="menu_bar" />
+        </div>
+
+        <nav class="sub_menu_wrap">
+          <div class="logo">
+            <a href="../../index.html">
+              <img src="img/sony-logo.svg" alt="logo" />
+            </a>
+          </div>
+
+          <ul class="menu">
+            <li><a href="../product/index.html">Product</a></li>
+            <li class="store">
+              <div class="store_click">
+                Store
+                <img src="../../img/main_tab_mo_img/arrow.png" alt="arrow" />
+              </div>
+
+              <ul class="store_wrap">
+                <li>
+                  <a
+                    href="https://store.sony.co.kr/?cmpid=gwt:header:store"
+                    target="_blank"
+                    >온라인스토어↗</a
+                  >
+                </li>
+
+                <li>
+                  <a href="https://www.playstation.com/ko-kr/" target="_blank"
+                    >PlayStation®↗</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="../aboutus/index.html">About Us</a></li>
+            <li><a href="../sonylife/index.html">Sony Life</a></li>
+            <li><a href="../service/index.html">Service</a></li>
+          </ul>
+
+          <div class="close">
+            <img src="../../img/main_tab_mo_img/close.png" alt="close" />
+          </div>
+        </nav>
+      </header>
+      <!-- header end -->
+
+      <section class="section_1">
+        <div class="title_wrap_1">
+          <h2>Product</h2>
+
+          <p>
+            소니의 앞선 기술과 디자인이 담긴 다양한 제품으로<br />
+            더 특별한 경험을 만나보세요.
+          </p>
+        </div>
+
+        <img
+          src="img/sub_product_img/section_1/sec_1_img.png"
+          alt="sony_camera"
+        />
+      </section>
+      <!-- section_1 end -->
+
+      <section class="section_2">
+        <ul class="tab_menu">
+          <li class="product_menu first_menu">ALL</li>
+          <li class="product_menu">오디오</li>
+          <li class="product_menu">카메라</li>
+          <li class="product_menu">렌즈</li>
+          <li class="product_menu">레온포켓</li>
+          <li class="product_menu">액세서리</li>
+        </ul>
+
+        <!-- <div class="con_wrap_2">
+
+                <div class="con_2">
+                    <h3>WH-1000XM6</h3>
+
+                    <img src="img/sub_product_img/section_2/headphone_1.png" alt="WH-1000XM6">
+                </div>
+
+                <div class="con_2 short_box">
+                    <h3>DSC-RX1RM3</h3>
+
+                    <img src="img/sub_product_img/section_2/camera.png" alt="DSC-RX1RM3">
+                </div>
+
+                <div class="con_2">
+                    <h3>ILCE-1M2</h3>
+
+                    <img src="img/sub_product_img/section_2/camera2.png" alt="ILCE-1M2">
+                </div>
+
+                <div class="con_2">
+                    <h3>ULT FIELD 3</h3>
+
+                    <img src="img/sub_product_img/section_2/ult.png" alt="ULT FIELD 3">
+                </div>
+
+                <div class="con_2">
+                    <h3>FE 50-150mm F2 GM</h3>
+
+                    <img src="img/sub_product_img/section_2/lens.png" alt="FE 50-150mm F2 GM">
+                </div>
+
+                <div class="con_2">
+                    <h3>FE 400-800mm F6.3-8 G OSS</h3>
+
+                    <img src="img/sub_product_img/section_2/lens_3.png" alt="FE 400-800mm F6.3-8 G OSS">
+                </div>
+
+                <div class="con_2 short_box">
+                    <h3>FE 16mm F1.8 G</h3>
+
+                    <img src="img/sub_product_img/section_2/lens_4.png" alt="FE 16mm F1.8 G">
+                </div>
+
+                <div class="con_2">
+                    <h3>WF-1000XM5</h3>
+
+                    <img src="img/sub_product_img/section_2/earphone_white.png" alt="WF-1000XM5">
+                </div>
+
+                <div class="con_2 short_box">
+                    <h3>ILCE-7CM2</h3>
+
+                    <img src="img/sub_product_img/section_2/camera_3.png" alt="ILCE-7CM2">
+                </div>
+
+            </div> -->
+
+        <div class="container_2">
+          <div class="con_wrap_2">
+            <div class="con_2">
+              <h3>WH-1000XM6</h3>
+
+              <img
+                src="img/sub_product_img/section_2/headphone_1.png"
+                alt="WH-1000XM6"
+              />
+            </div>
+
+            <div class="con_2">
+              <h3>ULT FIELD 3</h3>
+
+              <img
+                src="img/sub_product_img/section_2/ult.png"
+                alt="ULT FIELD 3"
+              />
+            </div>
+
+            <div class="con_2 short_box">
+              <h3>FE 16mm F1.8 G</h3>
+
+              <img
+                src="img/sub_product_img/section_2/lens_4.png"
+                alt="FE 16mm F1.8 G"
+              />
+            </div>
+          </div>
+
+          <div class="con_wrap_2">
+            <div class="con_2 short_box">
+              <h3>DSC-RX1RM3</h3>
+
+              <img
+                src="img/sub_product_img/section_2/camera.png"
+                alt="DSC-RX1RM3"
+              />
+            </div>
+
+            <div class="con_2">
+              <h3>FE 50-150mm F2 GM</h3>
+
+              <img
+                src="img/sub_product_img/section_2/lens.png"
+                alt="FE 50-150mm F2 GM"
+              />
+            </div>
+
+            <div class="con_2">
+              <h3>WF-1000XM5</h3>
+
+              <img
+                src="img/sub_product_img/section_2/earphone_white.png"
+                alt="WF-1000XM5"
+              />
+            </div>
+          </div>
+
+          <div class="con_wrap_2">
+            <div class="con_2">
+              <h3>ILCE-1M2</h3>
+
+              <img
+                src="img/sub_product_img/section_2/camera2.png"
+                alt="ILCE-1M2"
+              />
+            </div>
+
+            <div class="con_2">
+              <h3>FE 400-800mm F6.3-8 G OSS</h3>
+
+              <img
+                src="img/sub_product_img/section_2/lens_3.png"
+                alt="FE 400-800mm F6.3-8 G OSS"
+              />
+            </div>
+
+            <div class="con_2 short_box">
+              <h3>ILCE-7CM2</h3>
+
+              <img
+                src="img/sub_product_img/section_2/camera_3.png"
+                alt="ILCE-7CM2"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="more_btn">+ More</div>
+      </section>
+      <!-- pc, tab ver. -->
+
+      <div class="swiper mo_section_2">
+        <div class="swiper-wrapper mo_tab_menu">
+          <div class="swiper-slide mo_first_menu">ALL</div>
+          <div class="swiper-slide">오디오</div>
+          <div class="swiper-slide">카메라</div>
+          <div class="swiper-slide">렌즈</div>
+          <div class="swiper-slide">레온포켓</div>
+          <div class="swiper-slide">액세서리</div>
+        </div>
+
+        <div class="mo_container_2">
+          <div class="mo_con_wrap_2">
+            <div class="mo_con_2">
+              <h3>WH-1000XM6</h3>
+
+              <img
+                src="img/sub_product_img/section_2/headphone_1.png"
+                alt="WH-1000XM6"
+              />
+            </div>
+
+            <div class="mo_con_2">
+              <h3>ILCE-1M2</h3>
+
+              <img
+                src="img/sub_product_img/section_2/camera2.png"
+                alt="ILCE-1M2"
+              />
+            </div>
+
+            <div class="mo_con_2">
+              <h3>FE 50-150mm F2 GM</h3>
+
+              <img
+                src="img/sub_product_img/section_2/lens.png"
+                alt="FE 50-150mm F2 GM"
+              />
+            </div>
+
+            <div class="mo_con_2 short_box">
+              <h3>FE 16mm F1.8 G</h3>
+
+              <img
+                src="img/sub_product_img/section_2/lens_4.png"
+                alt="FE 16mm F1.8 G"
+              />
+            </div>
+          </div>
+
+          <div class="mo_con_wrap_2">
+            <div class="mo_con_2 short_box">
+              <h3>DSC-RX1RM3</h3>
+
+              <img
+                src="img/sub_product_img/section_2/camera.png"
+                alt="DSC-RX1RM3"
+              />
+            </div>
+
+            <div class="mo_con_2">
+              <h3>ULT FIELD 3</h3>
+
+              <img
+                src="img/sub_product_img/section_2/ult.png"
+                alt="ULT FIELD 3"
+              />
+            </div>
+
+            <div class="mo_con_2">
+              <h3>FE 400-800mm F6.3-8 G OSS</h3>
+
+              <img
+                src="img/sub_product_img/section_2/lens_3.png"
+                alt="FE 400-800mm F6.3-8 G OSS"
+              />
+            </div>
+
+            <div class="mo_con_2">
+              <h3>WF-1000XM5</h3>
+
+              <img
+                src="img/sub_product_img/section_2/earphone_white.png"
+                alt="WF-1000XM5"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="mo_more_btn">+ More</div>
+      </div>
+      <!-- mo ver. -->
+
+      <footer>
+        <div class="footer_top">
+          <h3>Follow Us</h3>
+
+          <div class="notices">
+            <div class="legal">
+              <a href="https://store.sony.co.kr/footer/terms" target="_blank"
+                >이용약관</a
+              >
+            </div>
+
+            <div class="privacy">
+              <a
+                href="https://www.sony.co.kr/handler/ProductInfo-Start?PageName=jsp/footer/CF_policy.jsp"
+                target="_blank"
+                >개인정보처리방침</a
+              >
+            </div>
+
+            <div class="protection">
+              <a href="#">소비자 피해 보상보험</a>
+            </div>
+
+            <div class="site_map">
+              <a href="https://store.sony.co.kr/footer/sitemap" target="_blank"
+                >사이트맵</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="footer_data">
+          <div class="sns_wrap">
+            <div class="facebook">
+              <a href="https://www.facebook.com/sonykorea" target="_blank">
+                <img src="img/footer/facebook.png" alt="facebook" />
+              </a>
+            </div>
+
+            <div class="instagram">
+              <a href="https://www.instagram.com/sonykorea/#" target="_blank">
+                <img src="img/footer/insta.png" alt="instagram" />
+              </a>
+            </div>
+
+            <div class="youtube">
+              <a
+                href="https://www.youtube.com/user/sonystyleblog"
+                target="_blank"
+              >
+                <img src="img/footer/youtube.png" alt="youtube" />
+              </a>
+            </div>
+
+            <div class="blog">
+              <a
+                href="https://stylezineblog.com/?intcmp=Main_Blog"
+                target="_blank"
+              >
+                <img src="img/footer/blog.png" alt="blog" />
+              </a>
+            </div>
+          </div>
+
+          <div class="info">
+            <p class="residence">
+              사업장주소 ㅣ 서울특별시 영등포구 국제금융로 10 투아이에프씨 28F
+            </p>
+
+            <div class="company">
+              <div class="number">
+                <p class="business">사업자 등록번호ㅣ106-81-23810</p>
+                <p class="service_center">소니코리아 고객센터ㅣ1588-0911</p>
+              </div>
+
+              <div class="information">
+                <p class="communication">
+                  통신판매번호 ㅣ 2012-서울영등포-1038
+                </p>
+                <p class="email">E-MAIL ㅣcshelp@sony.co.kr</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="copylight">
+          Copyright © Sony Korea Corporation. All rights reserved.
+        </div>
+
+        <div class="footer_logo">
+          <a href="../../index.html">
+            <img src="img/footer/SONY KOREA.png" alt="footer_logo" />
+          </a>
+        </div>
+      </footer>
+      <!-- footer end -->
+    </div>
+  </body>
+</html>

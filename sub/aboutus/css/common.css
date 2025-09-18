@@ -1,0 +1,47 @@
+body {
+  background-color: black;
+}
+
+section:not(.section_1, .section_4) {
+  padding: 150px 245px;
+}
+
+a {
+  color: white;
+}
+
+.title_wrap_2 h3,
+.section_3 h3,
+.mo_section_3 h3 {
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  section:not(.section_1, .section_4) {
+    padding: 100px 155px;
+  }
+
+  .title_wrap_2 h3,
+  .section_3 h3,
+  .mo_section_3 h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section:not(.section_1, .section_4) {
+    padding: 80px 20px;
+  }
+
+  .title_wrap_2 h3,
+  .section_3 h3,
+  .mo_section_3 h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+}
