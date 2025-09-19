@@ -1097,6 +1097,10 @@ footer h3 {
     line-height: 18px;
   }
 
+  .info .residence {
+    margin-bottom: 10px;
+  }
+
   .copylight {
     font-size: 10px;
     text-align: center;
