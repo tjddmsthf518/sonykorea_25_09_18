@@ -385,7 +385,7 @@ header {
 }
 
 .new_promotion {
-  margin-top: 50px;
+  margin-top: 40px;
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
@@ -395,6 +395,7 @@ header {
   /* 데스크톱에선 줄까지만 노출 후 … */
   -webkit-line-clamp: 10;
   line-clamp: 10;
+  word-break: keep-all;
 }
 
 /* con_wrap_2_2 start */

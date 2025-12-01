@@ -22,6 +22,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -161,7 +162,7 @@
       <!-- section_1 end -->
 
       <section class="section_2">
-        <h3>THE LATEST</h3>
+        <h3 data-aos="fade-up" data-aos-duration="1000">THE LATEST</h3>
 
         <div class="swiper con_wrap_2">
           <div class="swiper-wrapper">
@@ -252,7 +253,7 @@
       <!-- pc section_2 end -->
 
       <section class="mo_section_2">
-        <h3>THE LATEST</h3>
+        <h3 data-aos="fade-up" data-aos-duration="1000">THE LATEST</h3>
 
         <div class="swiper mo_con_wrap_2">
           <div class="swiper-wrapper">
@@ -347,14 +348,27 @@
             /> -->
 
             <div class="title_wrap_3">
-              <h3>Sony Online Store</h3>
-              <p>
+              <h3 data-aos="fade-up" data-aos-duration="1000">
+                Sony Online Store
+              </h3>
+              <p
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="1000"
+              >
                 당신의 일상에 영감을 더하는 소니, 소니가 전하는 새로운 경험을<br />
                 지금 온라인 스토어에서 시작하세요.
               </p>
             </div>
 
-            <div class="btn_3">바로가기</div>
+            <div
+              class="btn_3"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+            >
+              바로가기
+            </div>
           </a>
         </div>
       </section>
@@ -370,8 +384,8 @@
 
         <div class="sec_4_wrap">
           <div class="title_wrap_4">
-            <h3>BEST SELLER</h3>
-            <p>
+            <h3 data-aos="fade-up" data-aos-duration="1000">BEST SELLER</h3>
+            <p data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
               당신의 일상을 바꾼 소니의 베스트 무브 <br />
               지금 가장 인기 있는 소니의 베스트셀러 제품을 확인해보세요.
             </p>
@@ -429,8 +443,8 @@
 
       <section class="mo_section_4">
         <div class="title_wrap_4">
-          <h3>BEST SELLER</h3>
-          <p>
+          <h3 data-aos="fade-up" data-aos-duration="1000">BEST SELLER</h3>
+          <p data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
             당신의 일상을 바꾼 소니의 베스트 무브 <br />
             지금 가장 인기 있는 소니의 베스트셀러 제품을 확인해보세요.
           </p>
@@ -479,7 +493,7 @@
 
       <section class="section_5">
         <div class="title_wrap_5">
-          <h3>Sony Life</h3>
+          <h3 data-aos="fade-up" data-aos-duration="1000">Sony Life</h3>
           <div class="btn_more">
             <a href="sub/sonylife/index.html">
               <p>More</p>
@@ -647,5 +661,10 @@
       </footer>
       <!-- footer end -->
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
